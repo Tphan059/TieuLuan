@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,16 +47,181 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Admin\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Admin\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\childForm\BillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\childForm\BillForm.Designer.cs">
+      <DependentUpon>BillForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\childForm\BookingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\childForm\BookingForm.Designer.cs">
+      <DependentUpon>BookingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\childForm\CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\childForm\CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\childForm\DeviceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\childForm\DeviceForm.Designer.cs">
+      <DependentUpon>DeviceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\childForm\HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\childForm\HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\childForm\RoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\childForm\RoomForm.Designer.cs">
+      <DependentUpon>RoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\childForm\ServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\childForm\ServiceForm.Designer.cs">
+      <DependentUpon>ServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\childForm\StaffControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\childForm\StaffControlForm.Designer.cs">
+      <DependentUpon>StaffControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\subForm\BookingRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\subForm\BookingRoomForm.Designer.cs">
+      <DependentUpon>BookingRoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\subForm\ChangeStatusRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\subForm\ChangeStatusRoom.Designer.cs">
+      <DependentUpon>ChangeStatusRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\subForm\PayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\subForm\PayForm.Designer.cs">
+      <DependentUpon>PayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\subForm\PreBookingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\subForm\PreBookingForm.Designer.cs">
+      <DependentUpon>PreBookingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\subForm\ReceRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\subForm\ReceRoomForm.Designer.cs">
+      <DependentUpon>ReceRoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\subForm\ServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\subForm\ServiceForm.Designer.cs">
+      <DependentUpon>ServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\subForm\StatusRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\subForm\StatusRoomForm.Designer.cs">
+      <DependentUpon>StatusRoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassForm.Designer.cs">
+      <DependentUpon>ChangePassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Converting\Converting.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaffPage\StaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffPage\StaffForm.Designer.cs">
+      <DependentUpon>StaffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="Admin\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\childForm\BillForm.resx">
+      <DependentUpon>BillForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\childForm\BookingForm.resx">
+      <DependentUpon>BookingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\childForm\CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\childForm\DeviceForm.resx">
+      <DependentUpon>DeviceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\childForm\HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\childForm\RoomForm.resx">
+      <DependentUpon>RoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\childForm\ServiceForm.resx">
+      <DependentUpon>ServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\childForm\StaffControlForm.resx">
+      <DependentUpon>StaffControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\subForm\BookingRoomForm.resx">
+      <DependentUpon>BookingRoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\subForm\ChangeStatusRoom.resx">
+      <DependentUpon>ChangeStatusRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\subForm\PayForm.resx">
+      <DependentUpon>PayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\subForm\PreBookingForm.resx">
+      <DependentUpon>PreBookingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\subForm\ReceRoomForm.resx">
+      <DependentUpon>ReceRoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\subForm\ServiceForm.resx">
+      <DependentUpon>ServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\subForm\StatusRoomForm.resx">
+      <DependentUpon>StatusRoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassForm.resx">
+      <DependentUpon>ChangePassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +230,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +244,88 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="BUS\BUS.csproj">
+      <Project>{3164d34e-addc-4fc5-924d-dd0f2b0ee26a}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="DTO\DTO.csproj">
+      <Project>{8CBD9B5A-7CCD-47CE-AD8D-A516C37BB011}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\back %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\toppng.com-white-person-icon-people-white-icon-436x368 %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\381-3819703_the-icon-is-a-logo-of-booking-icone %28Custom%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\t3s38p2tv4brdejj50iihopbju %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\toppng.com-calendar-icon-agenda-white-icon-432x431 %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\toppng.com-bed-filled-icon-bed-icon-white-1589x1272 %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\transparent-bed-icon-home-living-icon-5d9e8ed8858022.7915127015706723445468 %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\living-room-icon-18-ffffff-512 %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\toppng.com-hamburger-junk-food-white-icon-1096x1014 %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\price-tag-icon-ffffff-512 %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\toppng.com-login-logout-white-icon-512x512 %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\bill-icon-ffffff-512 %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\businessman-icon-ffffff-512 %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\hotel-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\arrow-87-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\close-window-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\maximize-window-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\minus-6-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\key-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\24px-VisualEditor_-_Icon_-_Close_-_white.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\bill-icon-ffffff-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\close %28Custom%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
